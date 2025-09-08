@@ -1,6 +1,9 @@
 package com.example.network
 
+import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import io.github.jan.supabase.SupabaseClient
 import io.github.jan.supabase.auth.Auth
 import io.github.jan.supabase.auth.auth
@@ -13,6 +16,8 @@ import io.github.jan.supabase.storage.Storage
 import io.github.jan.supabase.storage.storage
 import javax.inject.Singleton
 
+@Module
+@InstallIn(SingletonComponent::class)
 object SupabaseModule {
     @Provides
     @Singleton
