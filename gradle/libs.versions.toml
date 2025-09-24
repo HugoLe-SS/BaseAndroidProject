@@ -34,6 +34,7 @@ supabaseBomVersion = "3.1.2"
 retrofit = "2.9.0"
 okhttp = "5.0.0-alpha.2"
 ktorVersion = "3.1.1"
+paging = "3.3.6"
 
 # DataStore + Room
 datastorePreferences = "1.1.7"
@@ -113,6 +114,11 @@ androidx-datastore-preferences = { module = "androidx.datastore:datastore-prefer
 room = { group = "androidx.room", name = "room-runtime", version.ref = "roomCompiler" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomCompiler" }
+
+# ---Paging---
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging" }
+paging-common = { module = "androidx.paging:paging-common", version.ref = "paging" }
 
 # --- Firebase ---
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
